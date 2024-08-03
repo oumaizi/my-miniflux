@@ -1,0 +1,161 @@
+.article-header {
+  padding-top: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.article-title, .article-meta, .article-date {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+/* 文章标题链接样式 */
+.article-title a {
+  color: var(--color-text-1); /* 设置链接文字颜色 */
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.article-meta .arco-typography{
+  color: var(--color-text-3);
+  font-size: 0.75rem;
+  line-height: 2 !important;
+}
+
+.article-date {
+  color: var(--color-text-3);
+  font-size: 0.75rem;
+}
+
+.scroll-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  contain: strict;
+  overscroll-behavior-y: contain;
+}
+
+.article-body * {
+  max-width: 100%;
+}
+
+.article-body {
+  line-height: 1.8;
+  margin: 0 auto;
+  overflow-wrap: break-word;
+  padding-bottom: 40px;
+}
+
+.article-content h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  color: var(--color-text-1);
+  font-weight: var(--font-weight-500);
+}
+
+.article-content li,
+p {
+  margin-block-end: 1em;
+  margin-block-start: 1em;
+}
+
+/* 文章内容图片样式 */
+.article-body img {
+  border-radius: 4px;
+  height: auto;
+}
+
+/*video 相关样式 */
+.article-body video {
+  border-radius: 4px;
+}
+
+.article-body img, .article-body video, .article-body iframe {
+  display: block;
+  margin: 20px auto;
+}
+
+/* 文章内容文本样式 */
+.article-content {
+  color: var(--color-text-2);
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+/* 文章内容链接样式 */
+.article-body a {
+  border-bottom: 1px dotted rgb(var(--primary-6)); /* 设置链接文字颜色 */
+  color: rgb(var(--primary-6));
+  text-decoration: none;
+  transition: color 0.1s linear;
+}
+
+.article-body a:hover {
+  border-bottom: 1px dotted rgb(var(--primary-5)); /* 设置链接文字颜色 */
+  color: rgb(var(--primary-5));
+  text-decoration: none;
+}
+
+/* 文章内容引用样式 */
+.article-body blockquote {
+  border-left: 1px solid var(--color-border-3);
+  color: var(--color-text-3);
+  margin: 1em 0;
+  padding: 0 20px;
+}
+
+.article-body figcaption {
+  color: var(--color-text-3);
+  font-size: 0.75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*code 相关样式 - 表格 */
+.article-content td {
+  color: var(--color-text-3);
+  font-size: 0.8em;
+}
+
+/*code 相关样式 */
+.article-content code {
+  background-color: var(--color-neutral-3);
+  border-radius: 2px;
+  color: var(--color-text-2);
+  font-size: 0.8em;
+  margin: 2px;
+  padding: 2px;
+}
+
+/*code 相关样式 */
+.article-content figure {
+  margin: 16px 0;
+}
+
+/*code 相关样式 */
+.article-content pre {
+  background-color: var(--color-neutral-3);
+  border-radius: 4px;
+  line-height: 1.2;
+  overflow: auto;
+  padding: 10px;
+}
+
+.content-empty {
+  align-items: center;
+  background-color: var(--color-fill-1);
+  color: var(--color-text-3);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  padding: 40px 16px;
+}
